@@ -1,3 +1,4 @@
+
 # PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
@@ -20,7 +21,7 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
+  host: 127.0.0.1
   username: ritchey0713
   password: piper0301
 
@@ -86,3 +87,4 @@ production:
   database: RailsPortfolio_production
   username: RailsPortfolio
   password: <%= ENV['RAILSPORTFOLIO_DATABASE_PASSWORD'] %>
+
