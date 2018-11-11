@@ -2,27 +2,27 @@
 
 <h1>Blogs</h1>
 
-<table>
-  <thead>
+
+  <div>
     <tr>
       <th>Title</th>
       <th>Body</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </div>
 
-  <tbody>
+  <div>
     <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div>
+        <p><%= blog.title %></p>
+        <p><%= blog.body %></p>
+        <p><%= link_to 'Show', blog %></p>
+        <p><%= link_to 'Edit', edit_blog_path(blog) %></p>
+        <p><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
 
 <br>
 
