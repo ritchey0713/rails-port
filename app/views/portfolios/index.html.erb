@@ -11,5 +11,6 @@
   
   <p><%= image_tag item.thumb_image unless item.thumb_image.nil? %></p>
   <%= link_to "Edit portfolio item", edit_portfolio_path(item) %>
+  <%= link_to "Delete Item", portfolio_path(item), method: :delete, data: { confirm: 'Are you sure? '}%>
   
 <% end %>
