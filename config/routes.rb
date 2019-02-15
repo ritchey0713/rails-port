@@ -1,5 +1,7 @@
 
 Rails.application.routes.draw do
+  devise_for :users
+  
   resources :portfolios, except: [:show]
   get 'react-items', to: "portfolios#react"
   
