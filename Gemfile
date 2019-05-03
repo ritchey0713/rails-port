@@ -54,4 +54,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'ritchey_solution_viewtool', git: 'https://github.com/ritchey0713/ritchey_digital_viewtool'
+gem 'ritchey_solution_viewtool', '~> 0.1.0'
