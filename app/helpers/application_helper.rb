@@ -16,4 +16,10 @@ module ApplicationHelper
     end 
   end
 
+
+  def copyright_generator
+    @copyright = RitcheySolutionViewtool::Renderer.copyright("Dj Ritchey", "All Rights Reserved")
+  end 
+  
+
 end
