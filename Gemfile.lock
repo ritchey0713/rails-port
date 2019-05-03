@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/ritchey0713/ritchey_digital_viewtool
-  revision: 2faf730580bfdddaa3d0a41392e51e2ee6662e29
-  specs:
-    ritchey_solution_viewtool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
