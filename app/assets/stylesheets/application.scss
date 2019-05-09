@@ -29,6 +29,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  width: 100%;
   background-color: #333;
 }
 
@@ -49,7 +50,7 @@ body {
  * Header
  */
 .masthead {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .masthead-brand {
@@ -105,18 +106,23 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  // position: fixed; 
+  // bottom: 0;
+  // text-align: center;
 }
 
 /*
  * Custom Styles
  */
-  .card {
-    margin-bottom: 1rem;
-  }
+
  .card-body {
    color: black;
    text-align: left;
  }
  .auth-links a {
    color: black; 
+ }
+
+ .register-text {
+   text-align: right;
  }
