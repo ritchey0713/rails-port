@@ -8,7 +8,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: rgb(65, 78, 252);
 }
 
 /* Custom default button */
@@ -19,6 +19,10 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 /*
