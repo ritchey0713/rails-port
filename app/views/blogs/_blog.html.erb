@@ -1,17 +1,16 @@
 <div class="blog-post">
   <h2 class="blog-post-title">
-    <%= blog.title.upcase %>
+    <%= link_to blog.title.upcase, blog_path(blog.id) %>
   </h2>
-  <p>published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago
-  </p>
 
+    <p class="blog-post-meta">published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago<a href="#"></a></p>
     <p>
-      <%= blog.body %>
+      <%= link_to 'Show', blog, class: "blog-link" %>
+      <% if logged_in?(:site_admin) %>
+        <%= link_to blog.status, toggle_status_blog_path(blog), class: "blog-link" %>   
+        <%= link_to 'Edit', edit_blog_path(blog), class: "blog-link" %>
+        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "blog-link" %>
+      <% end %>
     </p>
-
-    <%= link_to blog.status, toggle_status_blog_path(blog) %> 
-    <%= link_to 'Show', blog %>
-    <%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>
-    <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
-  
+  <p> <%= blog.body %> </p>
 </div>
