@@ -21,16 +21,15 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
-
  
 html,
 body {
   height: 100%;
   background-color: #333;
+  overflow: auto;
 }
 
 body {
@@ -50,7 +49,7 @@ body {
  * Header
  */
 .masthead {
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 
 .masthead-brand {
@@ -114,6 +113,10 @@ body {
 /*
  * Custom Styles
  */
+
+ .card {
+   margin-bottom: 5rem;
+ }
 
  .card-body {
    color: black;
