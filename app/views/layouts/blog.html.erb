@@ -23,11 +23,13 @@
   <%= link_to "Register", new_user_registration_path %>
   <% end %>
 
-    <%= yield %>
 
-    <%= render 'shared/nav', location: 'bottom' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'shared/nav', location: 'bottom' %>
     
-   <%= source_helper("blog") %>
+      <%= source_helper("blog") %>
+    </div>
 
   </body>
 </html>
