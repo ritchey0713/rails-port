@@ -11,16 +11,13 @@
   </head>
 
   <body class="text-center">
-  <div class="cover-container d-flex p-3 mx-auto flex-column">
-    <%= render 'shared/blog_nav'%>
-  
-  
-
-    <div class="container">
-      <%= yield %>
-      <%= render 'shared/footer'%>
-      <%= source_helper("blog") %>
+    <div class="cover-container d-flex p-3 mx-auto flex-column">
+      <%= render 'shared/blog_nav'%>
+      <div class="container">
+        <%= yield %>
+        <%= render 'shared/footer'%>
+        <%= source_helper("blog") %>
+      </div>
     </div>
-
   </body>
 </html>
