@@ -24,7 +24,11 @@ default: &default
   host: 127.0.0.1
   username: postgres
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   password: postgres
+=======
+  password: root
+>>>>>>> Stashed changes
 =======
   password: root
 >>>>>>> Stashed changes
