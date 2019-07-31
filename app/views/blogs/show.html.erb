@@ -1,14 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-8">
+    <div class="blog-post">
+      <h2 class="blog-title"><%= @blog.title %></h2>
+      <p class="blog-post-meta"><%=@blog.created_at%> by <a href="#"></a></>
+      <p><%= @blog.body %></p>
+    </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
+  <%= link_to 'Back', blogs_path %>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+  </div>
+  <%= render "blog_sidebar"%>
+</div>
 
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', blogs_path %>
