@@ -25,7 +25,11 @@ default: &default
   username: postgres
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   password: postgres
+=======
+  password: root
+>>>>>>> Stashed changes
 =======
   password: root
 >>>>>>> Stashed changes
