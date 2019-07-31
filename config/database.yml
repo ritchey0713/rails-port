@@ -22,7 +22,11 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: 127.0.0.1
+<<<<<<< Updated upstream
   username: root
+=======
+  username: postgres
+>>>>>>> Stashed changes
   password: root
 
 development:
