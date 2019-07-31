@@ -60,3 +60,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ritchey_solution_viewtool', '~> 0.1.0'
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
