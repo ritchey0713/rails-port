@@ -4,11 +4,14 @@
       <h3 class="pb-3 mb-4 font-italic border-bottom">
         Midgard Digital News
       </h3>
+      <%= paginate @blogs %>
+      
       <%= render @blogs %>
-      <nav class="blog-pagination">
+     <!-- <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
         <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-      </nav>
+      </nav> --> 
+      <%= paginate @blogs %>
     </div>
     <!-- aside partial here -->
     <%= render 'blog_sidebar'%>
