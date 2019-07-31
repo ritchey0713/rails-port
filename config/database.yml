@@ -23,7 +23,11 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: 127.0.0.1
   username: postgres
+<<<<<<< Updated upstream
   password: postgres
+=======
+  password: root
+>>>>>>> Stashed changes
 
 development:
   <<: *default
