@@ -1,8 +1,18 @@
-<h1>Portfolio Items</h1>
 
-<%= link_to "Create a new Item", new_portfolio_path if logged_in?(:site_admin)%>
 
 <!-- pass collection and partial keys when namespace of varibale is not the same as model name ie Portfolio != portfolio_items -->
-<%=  render partial: 'portfolio_item', collection: @portfolio_items %>
+
+<main role="main">
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <%=  render partial: 'portfolio_item', collection: @portfolio_items %>
+            </div>
+        </div>
+    </div>
+</main>
+
+
  
   
