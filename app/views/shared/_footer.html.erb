@@ -1,10 +1,9 @@
     <footer class="mastfoot text-center">
-        <div class="inner">
+        <div class="inner"> 
           <p><%= copyright_generator %> </p>
           <a href="#">Back to top</a>
           <% if params[:controller] == "portfolios" %>
             | <%= link_to 'View all portfoilio items', portfolios_path %> |
-            <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %> 
           <% end %>
         </div>
       </footer>
