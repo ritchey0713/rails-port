@@ -1,28 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+        <p id="notice"><%= notice %></p>
 
-<%= image_tag @portfolio_item.main_image %>
+        <%= image_tag @portfolio_item.main_image %>    
+    </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio_item.title %>
-</p>
+    <div class="col-md-5">    
+      <p>
+        <strong>Title:</strong>
+        <%= @portfolio_item.title %>
+      </p>
 
-<p>
-  <em>Subtitle:</em>
-  <%= @portfolio_item.subtitle %>
-</p>
+      <p>
+        <em>Subtitle:</em>
+        <%= @portfolio_item.subtitle %>
+      </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @portfolio_item.body %>
-</p>
+      <p>
+        <strong>Body:</strong>
+        <%= @portfolio_item.body %>
+      </p>
 
-<h2>Technologies Used</h2>
+      <h3>Technologies Used</h3>
 
-<% @portfolio_item.technologies.each do |technology|%>
-<p> <%= technology.name %></p>
-<% end %>
+      <% @portfolio_item.technologies.each do |technology|%>
+        <p> <%= technology.name %></p>
+      <% end %>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', portfolios_path %>
-
+      <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %> |
+      <%= link_to 'Back', portfolios_path %>    
+    </div>
+  
+  </div>
+</div>
