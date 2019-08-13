@@ -12,6 +12,8 @@ class Portfolio < ApplicationRecord
 
   scope :ruby_on_rails_items, -> {where(subtitle: "Ruby on Rails")}
 
+  scope :by_position, -> {order(position: :asc)}
+
   after_initialize :set_defaults
 
   def set_defaults 
