@@ -1,7 +1,9 @@
     <footer class="mastfoot text-center">
         <div class="inner"> 
           <p><%= copyright_generator %> </p>
-          <a href="#">Back to top</a>
+          <% if params[:controller] != "pages"%>
+            <a href="#">Back to top</a>
+          <% end %>
           <% if params[:controller] == "portfolios" %>
             | <%= link_to 'View all portfoilio items', portfolios_path %> |
           <% end %>
