@@ -18,6 +18,7 @@
           <ul class="list-unstyled">
             <%= nav_helper("text-white", "li")%>
             <li><%= login_helper('text-white', "<br/>") %></li>
+            <li><%= link_to "Create App", new_portfolio_path, class: 'text-white' if logged_in?(:site_admin) %></li>
             <li><%= link_to 'Edit', edit_portfolio_path(@portfolio_item), class: "text-white" if logged_in?(:site_admin) && params[:action] == "show"  %> </li>
               
 
