@@ -12,6 +12,17 @@
       <%= form.label :subtitle %>
       <%= form.text_field :subtitle, id: :portfolio_subtitle, class: "form-control" %>
     </div>
+  
+
+   <div class="field form-group">
+      
+      <%= form.file_field :main_image, value: @portfolio_item.main_image%>
+    </div>
+
+     <div class="field form-group">
+      
+      <%= form.file_field :thumb_image, value: @portfolio_item.main_image%>
+    </div>
   </div>
 
   <div class="col-md-6">
