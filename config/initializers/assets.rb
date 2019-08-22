@@ -12,6 +12,10 @@ Rails.application.config.assets.precompile += %w( blogs.css )
 
 Rails.application.config.assets.precompile += %w( portfolios.css )
 
+# for videos 
+
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/videos"
+
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
