@@ -16,5 +16,6 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require html.sortable
+//= require cocoon
 //= require portfolios.js
 //= require_tree .
