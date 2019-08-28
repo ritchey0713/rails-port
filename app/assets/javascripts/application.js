@@ -17,5 +17,6 @@
 //= require bootstrap-sprockets
 //= require html.sortable
 //= require cocoon
+//= require gritter
 //= require portfolios.js
 //= require_tree .
