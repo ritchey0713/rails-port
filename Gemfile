@@ -65,13 +65,15 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
-#manage uploads
-gem 'carrierwave', '< 2.0'
 
-gem 'mini_magick', '~> 4.9', '>= 4.9.5'
+gem 'carrierwave', '< 2.0' #manage uploads
 
-gem 'carrierwave-aws', '~> 1.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.5' #manage uploads
 
-gem 'cocoon', '~> 1.2', '>= 1.2.14'
+gem 'carrierwave-aws', '~> 1.3' #manage uploads
 
-gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'cocoon', '~> 1.2', '>= 1.2.14' #js dynamic form fields
+
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5' # env secrets
+
+gem 'gritter', '~> 1.2' #alerts
