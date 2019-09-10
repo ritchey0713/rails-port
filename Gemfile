@@ -77,3 +77,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14' #js dynamic form fields
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5' # env secrets
 
 gem 'gritter', '~> 1.2' #alerts
+
+gem 'twitter', '~> 6.2'
