@@ -29,7 +29,6 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    byebug
     @blog = Blog.new(blog_params)
 
     respond_to do |format|
