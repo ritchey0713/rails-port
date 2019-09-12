@@ -79,3 +79,5 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.5' # env secrets
 gem 'gritter', '~> 1.2' #alerts
 
 gem 'twitter', '~> 6.2'
+
+gem 'redis', '~> 4.1', '>= 4.1.2'
