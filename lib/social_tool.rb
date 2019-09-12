@@ -7,7 +7,7 @@
          config.access_token_secret = ENV.fetch("ACCESS_SECRET")
        end
 
-      client.search("#rails", result_type: 'recent').take(10).collect do |tweet|
+      client.search("#code", result_type: 'recent').take(10).collect do |tweet|
          "#{tweet.user.screen_name}: #{tweet.text}"
       end 
     end 
