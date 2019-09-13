@@ -5,7 +5,9 @@ class Blog < ApplicationRecord
 
     validates_presence_of :title, :body 
     belongs_to :topic
-    has_many :comments
+    has_many :comments, dependent: :destroy
+
+    scope :featured_blogs, -> {order(created_at: :desc).limit(3)}
 
     
 end
