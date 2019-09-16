@@ -20,4 +20,5 @@
 //= require gritter
 //= require cable
 //= require portfolios.js
+//= require blogs.js
 //= require_tree .
