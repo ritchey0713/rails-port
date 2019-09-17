@@ -15,9 +15,9 @@ module CurrentUserConcern
     #   )
 
     guest = GuestUser.new
-    guest.name = "Gust User"
-    guest.first_name = "Guest"
-    guest.last_name = "User"
+    guest.user_name = "Gust User"
+    # guest.first_name = "Guest"
+    # guest.last_name = "User"
     guest.email = "guest@example.com"
     guest
   end 
