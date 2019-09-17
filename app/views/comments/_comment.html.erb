@@ -3,10 +3,19 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-1">
+              <%= gravitar_helper(comment.user)%>
               </div>
 
-              <div class="col-md-11">
-                <%= comment.content %>
+              <div class="col-md-11 comment">
+                <div>
+                  <%= comment.content %>
+                </div>
+                <div class="comment-attribution">
+                  <p class="blog-post-meta">Comment posted by: <span class="comment-name"><%= comment.user.user_name %></span> at <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago<a href="#"></a></p>
+                 </div>
+              </div>
+              <div>
+                
               </div>
             </div>
           </div>
