@@ -2,7 +2,9 @@
   <div class="col-md-8">
     <div class="blog-post">
       <h2 class="blog-title"><%= @blog.title %></h2>
-      <p class="blog-post-meta"><%=@blog.created_at%> by <a href="#"></a></>
+      <p class="blog-post-meta"><%=@blog.created_at%> <a href="#"></a></p>
+        <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
+        <%= link_to 'Back', blogs_path %>
       <p><%= @blog.body %></p>
 
       <!-- comment form  -->
@@ -16,9 +18,7 @@
 
       <!-- comment show -->
     </div>
-
-  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-  <%= link_to 'Back', blogs_path %>
+ 
 
   </div>
   <%= render "blog_sidebar"%>
