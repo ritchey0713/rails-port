@@ -3,6 +3,9 @@
       <h3 class="pb-3 mb-4 font-italic border-bottom">
         Midgard Digital News
       </h3>
+      <% if logged_in?(:site_admin) %>
+        <h4> <%= link_to "Create a Blog", new_blog_path %> </h4>
+        <% end %>
       <%= paginate @blogs %>
       
       <%= render @blogs %>
