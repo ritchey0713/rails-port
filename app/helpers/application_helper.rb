@@ -28,10 +28,6 @@ module ApplicationHelper
         title: "Home"
       },
       {
-        url: new_blog_path, 
-        title: "Create a blog"
-      },
-      {
         url: blogs_path, 
         title: "All blogs"
       },
