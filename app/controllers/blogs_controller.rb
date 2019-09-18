@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(5)
+    logged_in?(:site_admin) ? @blogs = Blog.desc_blogs.page(params[:page]).per(5)  : @blogs = Blog.published.desc_blogs.page(params[:page]).per(5)
     @page_title = "All Blogs"
   end
 
@@ -71,7 +71,7 @@ class BlogsController < ApplicationController
   def toggle_status 
     @blog.draft? ? @blog.published! : @blog.draft!
     
-    redirect_to blogs_url, notice: "Post has been updated!"
+    redirect_to blogs_url, notice: "Blog has been updated!"
   end 
 
   private
