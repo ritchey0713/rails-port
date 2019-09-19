@@ -6,7 +6,7 @@
       <p class="blog-post-meta"><%=@blog.created_at%> <a href="#"></a></p>
         <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
         <%= link_to 'Back', blogs_path %>
-      <p><%= @blog.body %></p>
+      <p><%= markdown(@blog.body) %></p>
 
       <!-- comment form  -->
         <%= render 'comments/comment_form'%>
