@@ -232,7 +232,7 @@ body {
   a,
 a:focus,
 a:hover {
-  color: #fff;
+  text-emphasis: weigh;
 }
 
 /* Custom default button */
@@ -264,4 +264,12 @@ a:hover {
 
 .form-text{
   color: black;
+}
+
+.topic-title{
+  margin-bottom: 20px;
+}
+
+.form-links{
+  padding-top: 20px;
 }
