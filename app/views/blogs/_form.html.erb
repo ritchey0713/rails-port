@@ -1,36 +1,47 @@
-<div class="card">
-  <div class="card-body">  
-    <%= form_with(model: blog, local: true) do |form| %>
-      <% if blog.errors.any? %>
-        <% blog.errors.full_messages.each do |error| %>
-        <%= alert_generator(error) %>
+<div class="col-md-8">
+  <div class="card">
+    <div class="card-body">  
+      <%= form_with(model: blog, local: true) do |form| %>
+        <% if blog.errors.any? %>
+          <% blog.errors.full_messages.each do |error| %>
+          <%= alert_generator(error) %>
+          <% end %>
         <% end %>
+        
+        <div class="form-group">
+          <%= form.label :title, class: "form-text" %>
+          <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :topic, class: "form-text" %>
+          <%= form.collection_select(:topic_id, Topic.all, :id, :title, {
+            selected: blog.topic.id 
+            include_blank: true,
+          }, {
+            class: 'form-control'}) 
+          %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :body, class: "form-text" %>
+          <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 12 %>
+        </div>
+
+        <div class="form-group">
+          <%= form.submit "Submit changes",  class: "btn btn-primary" %>
+        </div>
       <% end %>
+      <div class= "row">
+          <span class="col-md-6 form-links">
+            <%= link_to 'Show', @blog, class: "btn btn-primary" %>
+          </span>
+          <span class="form-links col-md-6">
+              <%= link_to 'Back', blogs_path , class: "btn btn-warning"%>    
+          </span>
+           
+      </div>
       
-      <div class="form-group">
-        <%= form.label :title, class: "form-text" %>
-        <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
-      </div>
-
-      <div class="form-group">
-        <%= form.label :topic, class: "form-text" %>
-        <%= form.collection_select(:topic_id, Topic.all, :id, :title, {
-          selected: blog.topic.id, 
-          include_blank: true,
-        }, {
-          class: 'form-control'}) 
-        %>
-      </div>
-
-      <div class="form-group">
-        <%= form.label :body, class: "form-text" %>
-        <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 12 %>
-      </div>
-
-      <div class="form-group">
-        <%= form.submit "Submit changes",  class: "btn btn-primary" %>
-      </div>
-    <% end %>
-  
+    </div>
   </div>
 </div>
