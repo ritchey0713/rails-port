@@ -1,11 +1,9 @@
-<div class="row">
+<!-- div class="row"-->
     <div class="col-md-8 blog-main">
       <h3 class="pb-3 mb-4 font-italic border-bottom">
         Midgard Digital News
       </h3>
-      <% if logged_in?(:site_admin) %>
-        <h4> <%= link_to "Create a Blog", new_blog_path %> </h4>
-        <% end %>
+      <%= render 'masthead'%>
       <%= paginate @blogs %>
       
       <%= render @blogs %>
@@ -16,8 +14,8 @@
       <%= paginate @blogs %>
     </div>
     <!-- aside partial here -->
-    <%= render 'blog_sidebar'%>
-</div>
+    <%#= render 'blog_sidebar'%>
+<!-- /div -->
 
 
 
