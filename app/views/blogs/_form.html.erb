@@ -6,18 +6,24 @@
         <%= alert_generator(error) %>
         <% end %>
       <% end %>
+      
       <div class="form-group">
-        <%= form.label :topic %>
-        <%= form.collection_select(:topic_id, Topic.all, :id, :title, {}, {class: 'form-control'}) %>
-      </div>
-
-      <div class="form-group">
-        <%= form.label :title %>
+        <%= form.label :title, class: "form-text" %>
         <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
       </div>
 
       <div class="form-group">
-        <%= form.label :body %>
+        <%= form.label :topic, class: "form-text" %>
+        <%= form.collection_select(:topic_id, Topic.all, :id, :title, {
+          selected: blog.topic.id, 
+          include_blank: true,
+        }, {
+          class: 'form-control'}) 
+        %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :body, class: "form-text" %>
         <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 12 %>
       </div>
 
