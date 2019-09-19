@@ -2,6 +2,7 @@
   <div class="col-md-8">
     <div class="blog-post">
       <h2 class="blog-title"><%= @blog.title %></h2>
+      <p class="blog-post-meta"><%=@blog.topic.title%></p>
       <p class="blog-post-meta"><%=@blog.created_at%> <a href="#"></a></p>
         <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
         <%= link_to 'Back', blogs_path %>
