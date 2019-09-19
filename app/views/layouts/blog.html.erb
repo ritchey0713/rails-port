@@ -13,14 +13,16 @@
   <body class="text-center">
   <div id="blog-background"></div>
     <div class="cover-container d-flex p-3 mx-auto flex-column">
-
       <%= render 'shared/blog_nav'%>
-      <div class="container">
-        <%= yield %>
-        <%= source_helper("blog") %>
-        <%= alerts %>
-        <%= render 'shared/footer'%>
+      <div class="row">
+        
+          <%= yield %>
+          <%= source_helper("blog") %>
+          <%= alerts %>
+        
+          <%= render 'blogs/blog_sidebar'%>
       </div>
+          <%= render 'shared/footer'%>
     </div>
   </body>
 </html>
