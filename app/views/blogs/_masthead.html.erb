@@ -1,0 +1,7 @@
+ <span><% if logged_in?(:site_admin) %>
+        <h4> <%= link_to "Create a Blog", new_blog_path %> </h4>
+<% end %>
+</span>
+<span>
+    <h4><%= link_to "Topics", topics_path %></h4>
+</span>
