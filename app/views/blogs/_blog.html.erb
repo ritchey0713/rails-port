@@ -5,12 +5,8 @@
     <p class="blog-post-meta"> <%= distance_of_time_in_words(blog.updated_at, Time.now) %> ago<a href="#"></a></p>
     <p>
       <%= link_to 'Show', blog, class: "blog-link" %>
-      <% if logged_in?(:site_admin) %>
       
-        <%= link_to blog.status, toggle_status_blog_path(blog), class: "blog-link" %>   
-        <%= link_to 'Edit', edit_blog_path(blog), class: "blog-link" %>
-        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "blog-link" %>
-      <% end %>
+      <%= render partial: 'blogs/admin_actions', locals: {blog: blog}%>
     </p>
-  <p> <%= blog.body %> </p>
+  <%= markdown(blog.body, "truncated")%>
 </div>
