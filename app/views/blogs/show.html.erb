@@ -20,7 +20,7 @@
           </span>
       </nav>
 
-      <p><%= markdown(@blog.body) %></p>
+      <%= markdown(@blog.body) %>
 
       <!-- comment form  -->
         <%= render 'comments/comment_form'%>
