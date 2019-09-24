@@ -1,0 +1,10 @@
+<% if logged_in?(:site_admin) %>
+    <nav class="breadcrumb blog-crumb">
+        <span>
+            <%= link_to fa_icon("file-text"), toggle_status_blog_path(blog), class: "blog-link", style: blog_status_color(blog) %>   
+            <%= link_to fa_icon("pencil-square-o"), edit_blog_path(blog), class: "blog-link" %>
+            <%= link_to fa_icon("trash"), blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "blog-link" %>
+        </span>
+    </nav>
+<% end %>
+      
