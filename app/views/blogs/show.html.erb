@@ -5,15 +5,21 @@
       <p class="blog-post-meta"><%=@blog.topic.title%></p>
       <p class="blog-post-meta"><%=@blog.created_at%> <a href="#"></a></p>
 
-      <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
-  </ol>
-</nav>
-        <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-        <%= link_to 'Back', blogs_path %>
+
+      <nav class="bread-text breadcrumb row">
+        <div class="col">
+          <%= link_to "Home", root_path, class:"breadcrumb-item" %>
+          <%= link_to @blog.topic.title, topic_path(@blog.topic), class:"breadcrumb-item" %>
+          <span class="breadcrumb-item active"><%= @blog.title %></span>
+
+          
+        </div>
+        <span class="float-right">
+            <%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin) %>
+            <%= link_to fa_icon("trash"), @blog, method: :delete, data: {confirm: "Are you sure you want to delete?"} if logged_in?(:site_admin)%>
+          </span>
+      </nav>
+
       <p><%= markdown(@blog.body) %></p>
 
       <!-- comment form  -->
