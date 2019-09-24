@@ -4,7 +4,11 @@
             <p class=" about-text">Midgard Digital presents our blogs where we talk shop, and clue you in on any and all our tips and tricks! We may also write to you about the other things we find ourselves passionate about. <em>Alway remember the  greatest technology we can ever own is knowledge.</em></p>
           </div>
 
-          <div class="p-3 sidebar-moduke">
+          
+            <%= source_helper("alert alert-info blog-sidebar-source")%>
+          
+
+          <div class="p-3 sidebar-module">
             <h4 class="font-italic">Archives</h4>
             <ol class="list-unstyled mb-0">
               <% @sidebar_topics.each do |topic| %>
