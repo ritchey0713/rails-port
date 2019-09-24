@@ -4,6 +4,14 @@
       <h2 class="blog-title"><%= @blog.title %></h2>
       <p class="blog-post-meta"><%=@blog.topic.title%></p>
       <p class="blog-post-meta"><%=@blog.created_at%> <a href="#"></a></p>
+
+      <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
         <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
         <%= link_to 'Back', blogs_path %>
       <p><%= markdown(@blog.body) %></p>
