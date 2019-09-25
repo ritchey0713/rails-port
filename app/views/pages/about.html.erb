@@ -2,23 +2,81 @@
     <div class="card">
         <h1>Who am I?</h1>
 
-<div class="row">
+        <div class="row">
 
-    <div class="col-md-4">
-        <!-- <img src= "https://live.staticflickr.com/65535/48577097331_5bc30264ef_b.jpg" width="300" alt="Profile image"> -->
+            <div class="col-md-4">
+                <!-- <img src= "https://live.staticflickr.com/65535/48577097331_5bc30264ef_b.jpg" width="300" alt="Profile image"> -->
         
-        <%= image_tag("profile_img.jpg", width: 360, alt: "profile", class: "profile-img")%>
+                <%= image_tag("profile_img.jpg", width: 360, alt: "profile", class: "profile-img")%>
+            </div>
+
+            <div class="col-md-8">
+
+                <!-- <p>With a current 3 years of experience building custom software, in several industries, I found a huge problem, clients and developmet firms don't communicate well, if at all, and the product is mostly a secret until launch. This is why I started Midgard Digital. If you need an Application for your business, stock photos, or even some media edited, the pitfalls are a huge risk. Our company is here to lessen the fear, and to do so at a price that independent companies, or a day 1 start up can afford to put their best foot forward. </p> --> 
+
+                <p>With 3 years of experience in Ruby on Rails, and the latest and greatest versions for React.JS I am here to build you a Application that will be modular, and flexible so you don't have to worry. I have worked across many different industries, and I owe much of my success to years of customer service and the tools I have picked up, such as strong communication to deliver exactly what is asked. The bottom line is a product that was imagined and brought to life by Midgard Digital, on time, within budget, and with no fuss.</p>
+
+                <p>
+                    <button 
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#jobHistory"
+                        aria-expanded="false"
+                        aria-controller="jobHistory"
+                    >
+                     Job History
+                    </button>
+
+                    <button 
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#schoolHistory"
+                        aria-expanded="false"
+                        aria-controller="schoolHistory"
+                    >
+                     Education
+                    </button>
+                
+                </p>
+
+                <p>
+                    <div class="collapse" id="jobHistory">
+                        <div class="card card-body">
+                            List of jobs
+                        </div>
+                        <div class="card card-body">
+                            List of jobs
+                        </div>
+                        <div class="card card-body">
+                            List of jobs
+                        </div>
+                        <div class="card card-body">
+                            List of jobs
+                        </div>
+                    </div>
+                </p>
+
+                <p>
+                    <div class="collapse" id="schoolHistory">
+                        <div class="card card-body">
+                            List of schools
+                        </div>
+                        <div class="card card-body">
+                            List of schools
+                        </div>
+                        <div class="card card-body">
+                            List of schools
+                        </div>
+                        <div class="card card-body">
+                            List of schools
+                        </div>
+                    </div>
+                </p>
+
+            </div>
+        </div>
     </div>
-
-    <div class="col-md-8">
-
-        <!-- <p>With a current 3 years of experience building custom software, in several industries, I found a huge problem, clients and developmet firms don't communicate well, if at all, and the product is mostly a secret until launch. This is why I started Midgard Digital. If you need an Application for your business, stock photos, or even some media edited, the pitfalls are a huge risk. Our company is here to lessen the fear, and to do so at a price that independent companies, or a day 1 start up can afford to put their best foot forward. </p> --> 
-
-        <p>With 3 years of experience in Ruby on Rails, and the latest and greatest versions for React.JS I am here to build you a Application that will be modular, and flexible so you don't have to worry. I have worked across many different industries, and I owe much of my success to years of customer service and the tools I have picked up, such as strong communication to deliver exactly what is asked. The bottom line is a product that was imagined and brought to life by Midgard Digital, on time, within budget, and with no fuss.</p>
-
-    </div>
-</div>
-    </div>
-
 </div>
 
