@@ -53,7 +53,11 @@ body {
  * Header
  */
 .masthead {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
+}
+
+.inner-cover{
+  margin-top: 7em;
 }
 
 .masthead-brand {
@@ -172,7 +176,7 @@ body {
 }
 
 .app-footer{
-  color: white
+  color: white;
 }
 
 .tech-news{
@@ -185,4 +189,27 @@ body {
 
 .tech-news > .card{
   padding: 15px;
+}
+
+.app-card-container{
+  color: black;
+  text-align: left;
+  
+}
+
+.app-card-container a{
+  color: black;
+  
+  
+}
+
+.app-card-container > .card{
+  padding: 25px;
+  
+}
+
+.profile-img{
+  border: 1px solid gray;
+  margin: 7px;
+  width: 100%;
 }
