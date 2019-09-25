@@ -113,11 +113,11 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
-  // position: fixed; 
   // bottom: 0;
   // text-align: center;
-
+  text-align: center;
 }
+
 
 /*
  * Custom Styles
@@ -199,17 +199,22 @@ body {
 
 .app-card-container a{
   color: black;
+  margin-bottom: 30px;
   
   
 }
 
 .app-card-container > .card{
   padding: 25px;
-  
 }
 
 .profile-img{
   border: 1px solid gray;
   margin: 7px;
   width: 100%;
+}
+
+.card-body{
+  margin: 5px 0;
+
 }
