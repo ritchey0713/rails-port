@@ -15,23 +15,20 @@
   <body class="text-center">
 
     <div class="cover-container d-flex p-3 mx-auto flex-column">
-    <div id="background"></div>
+      <div id="background"></div>
 
-    <%= video_tag(
-      "keyboard.mp4",
-      id: "background",
-      autoplay: true,
-      loop: true,
-      muted: true,
-      poster: 'home.jpg'
-    )%>
+      <%= video_tag(
+        "keyboard.mp4",
+        id: "background",
+        autoplay: true,
+        loop: true,
+        muted: true,
+        poster: 'home.jpg'
+      )%>
       <%= render 'shared/application_nav' %>
       <%= yield %>
     </div>
-    
-    <div class="footer">
-      <%= render 'shared/footer'%>  
-    </div>  
+    <%= render 'shared/footer'%>  
     <%= alerts %>
   </body>
 </html>
