@@ -8,6 +8,26 @@
                 <!-- <img src= "https://live.staticflickr.com/65535/48577097331_5bc30264ef_b.jpg" width="300" alt="Profile image"> -->
         
                 <%= image_tag("profile_img.jpg", width: 360, alt: "profile", class: "profile-img")%>
+
+                <div class="skills">
+                    <% @skills.each do |skill| %>
+                    <div class="skill">
+                        
+                            <h4><%= skill.title %></h4>
+                            <div class="progress">
+                                <div class="progress-bar 
+                                            progress-bar-striped 
+                                            bg-warning"
+                                    role="progressbar"
+                                    aria-valuenow="<%= skill.percent_utilized %>"
+                                    aria-valuemax="100"
+                                    style="width: <%= skill.percent_utilized %>%;"        
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
             </div>
 
             <div class="col-md-8">
