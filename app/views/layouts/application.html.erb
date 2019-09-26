@@ -13,8 +13,7 @@
   </head>
 
   <body class="text-center">
-
-    <div class="cover-container d-flex p-3 mx-auto flex-column">
+    <div class="cover-container d-flex p-3 mx-auto flex-column wrapper">
       <div id="background"></div>
 
       <%= video_tag(
@@ -28,7 +27,7 @@
       <%= render 'shared/application_nav' %>
       <%= yield %>
     </div>
-    <%= render 'shared/footer'%>  
     <%= alerts %>
   </body>
+    <%= render 'shared/footer'%>  
 </html>
