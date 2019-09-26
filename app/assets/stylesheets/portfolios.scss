@@ -3,6 +3,24 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: font-url("Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Source Code Pro', monospace;
+  src: font-url("SourceCodePro-Medium.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .jumbotron {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -47,5 +65,9 @@
 
   .portfolio-container{
     padding-top: 30px;
+  }
+
+  .devName{
+    font-family: 'Montserrat', sans-serif;
   }
   
