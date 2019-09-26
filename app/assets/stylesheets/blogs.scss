@@ -17,6 +17,7 @@
 
 .blog-link {
     color: #2095f5;
+    
 }
 
 body {
@@ -25,7 +26,8 @@ body {
 }
 
 .blog-link:hover {
-    color:white;
+    // color:powderblue;
+    text-emphasis: weigh;
 }
 
 .blog-header {
@@ -247,6 +249,7 @@ a:hover {
   text-emphasis: weigh;
 }
 
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -313,4 +316,17 @@ a:hover {
 
 .inner{
   font-family: 'Montserrat', sans-serif;
+}
+
+.blog-card{
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.blog-card-text{
+  color: black;
+}
+
+.pagination {
+  justify-content: center;
 }
