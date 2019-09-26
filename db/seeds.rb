@@ -1,3 +1,21 @@
+User.create!(
+  email: "ritchey0713@gmail.com",
+  password: ENV.fetch('ADMIN_PASSWORD'),
+  password_confirmation: ENV.fetch('ADMIN_PASSWORD'),
+  user_name: "Dj Ritchey",
+  roles: "site_admin"
+)
+puts "Admin user created!"
+
+User.create!(
+  email: "test@test.com",
+  password: "asdasdasd",
+  password_confirmation: "asdasdasd",
+  user_name: "Test User",
+)
+
+puts "test user created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
