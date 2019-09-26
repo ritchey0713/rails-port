@@ -2,6 +2,17 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: font-url("Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Source Code Pro', monospace;
+  src: font-url("SourceCodePro-Medium.ttf");
+}
+
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-link {
@@ -10,6 +21,7 @@
 
 body {
   color: white;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .blog-link:hover {
@@ -31,7 +43,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .display-4 {
@@ -297,4 +309,8 @@ a:hover {
 
 .blog-sidebar-source{
   margin-top: 35px;
+}
+
+.inner{
+  font-family: 'Montserrat', sans-serif;
 }
