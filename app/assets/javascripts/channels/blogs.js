@@ -21,7 +21,7 @@
 //     e.preventDefault()
 //     return false 
 
-let comment = function() {
+var comment = function() {
   jQuery(document).on('turbolinks:load', function() {
     var comments;
     comments = $('#comments');
