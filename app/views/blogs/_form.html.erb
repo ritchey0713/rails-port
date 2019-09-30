@@ -15,8 +15,7 @@
 
         <div class="form-group">
           <%= form.label :topic, class: "form-text" %>
-          <%= form.collection_select(:topic_id, Topic.all, :id, :title, {
-            selected: blog.topic.id, 
+          <%= form.collection_select(:topic_id, Topic.all, :id, :title, { 
             include_blank: true,
           }, {
             class: 'form-control'}) 
