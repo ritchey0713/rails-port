@@ -1,7 +1,7 @@
-const cards = document.getElementsByClassName("card");
-let updatedOrder = [];
+var cards = document.getElementsByClassName("card");
+var updatedOrder = [];
 
-let setPositions = function(){
+var setPositions = function(){
     $(".card").each(function(ele){
         $(this).attr('data-pos', ele + 1);
         
@@ -31,7 +31,7 @@ let setPositions = function(){
 
 // $(document).ready(ready);
 
-let ready = function(){
+var ready = function(){
     setPositions();
     $('.sortable').sortable();
     $('.sortable').sortable().bind('sortupdate', function(event, ui){

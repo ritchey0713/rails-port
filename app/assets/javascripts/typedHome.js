@@ -8,7 +8,7 @@
   
 //   var typed = new Typed('#element', options);
 
-let typed =  $(function(){
+var typed =  $(function(){
     $("#element").typed({
       strings: ["Develop.", "Design.", "Chat.", "Explore", "Inquire", "Grow"],
       typeSpeed: 30,
