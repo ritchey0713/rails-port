@@ -13,12 +13,14 @@
 
 
 //= require jquery
+//= require lib/typed.js
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require typedHome 
 //= require cable
 //= require turbolinks
 //= require_tree .
