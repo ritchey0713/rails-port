@@ -76,7 +76,9 @@ class PortfoliosController < ApplicationController
         :subtitle, 
         :body, 
         :main_image, 
-        :thumb_image, 
+        :thumb_image,
+        :url,
+        :github_url, 
         technologies_attributes: [:id, :name, :_destroy]) #:_destroy for cocoon, to destroy items
     end
  
