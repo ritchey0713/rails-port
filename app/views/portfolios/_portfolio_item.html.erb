@@ -15,7 +15,7 @@
           <%# <button type="button" class="btn btn-sm btn-outline-secondary" >View</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Github</button> %>
           <%= link_to "View App", portfolio_item.url, target: "_blank", class: "btn btn-sm btn-outline-secondary"%>
-          <%= link_to "View Repo", portfolio_item.url, target: "_blank", class: "btn btn-sm btn-outline-secondary"%>
+          <%= link_to "View Repo", portfolio_item.github_url, target: "_blank", class: "btn btn-sm btn-outline-secondary"%>
         </div>
         <small class="text-muted"><%= distance_of_time_in_words(portfolio_item.created_at, Time.now) %></small>
       </div>
